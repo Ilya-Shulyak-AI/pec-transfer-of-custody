@@ -37,7 +37,7 @@ body { font-family:var(--font-body); background:var(--bg); min-height:100vh; min
 .fg-2 { grid-template-columns:1fr 1fr; }
 .fg-3 { grid-template-columns:1fr 1fr 1fr; }
 .fg-city { grid-template-columns:2fr 1fr 1fr 1fr; }
-.fg-from-details { grid-template-columns:40% 25% 35%; }
+.fg-from-details { grid-template-columns:40% 20% 40%; }
 .fg-from-location { grid-template-columns:40% 20% 20% 20%; }
 .fg-receiving-primary,
 .fg-receiving-contact { grid-template-columns:1fr 1fr; }
