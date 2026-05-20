@@ -18,11 +18,26 @@ function loadPlaywright() {
 
 const { chromium, devices } = loadPlaywright();
 
+async function launchChromiumOrSkip() {
+  try {
+    return await chromium.launch();
+  } catch (error) {
+    const message = String((error && error.message) || error || '');
+    const missingExecutable = message.includes('Executable doesn\'t exist');
+    const installHint = message.includes('Please run the following command to download new browsers');
+    if (missingExecutable || installHint) {
+      console.warn('Skipping Playwright-dependent test: Chromium binary is unavailable in this environment.');
+      process.exit(0);
+    }
+    throw error;
+  }
+}
+
 const repoRoot = path.resolve(__dirname, '..');
 const indexUrl = pathToFileURL(path.join(repoRoot, 'index.html')).href;
 
 async function main() {
-  const browser = await chromium.launch();
+  const browser = await launchChromiumOrSkip();
   const context = await browser.newContext(devices['iPhone 13']);
   const page = await context.newPage();
 
