@@ -1,15 +1,15 @@
 /* Header logo polish overrides. Keep this file focused and behavior-free.
    The logo PNG has a large transparent canvas around the actual mark, so the
-   logo must be displayed through a fixed, overflow-hidden window with the
-   image enlarged and centered inside that window. */
+   logo is displayed through a fixed, overflow-hidden window with the image
+   enlarged only enough to make the visible mark readable without clipping. */
 
 body .page .doc-header {
   display: grid !important;
-  grid-template-columns: 112px minmax(0, 1fr) auto !important;
+  grid-template-columns: 98px minmax(0, 1fr) auto !important;
   grid-template-rows: 1fr auto !important;
   align-items: center !important;
   column-gap: 16px !important;
-  min-height: 112px !important;
+  min-height: 102px !important;
   padding: 12px 14px 10px !important;
   border-bottom: 3px solid var(--blue-light) !important;
   background: #fff !important;
@@ -21,8 +21,8 @@ body .page .doc-header .toc-header-logo-wrap {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  width: 108px !important;
-  height: 92px !important;
+  width: 94px !important;
+  height: 82px !important;
   overflow: hidden !important;
   justify-self: center !important;
   align-self: center !important;
@@ -30,7 +30,7 @@ body .page .doc-header .toc-header-logo-wrap {
 
 body .page .doc-header .toc-header-logo {
   display: block !important;
-  width: 345px !important;
+  width: 260px !important;
   max-width: none !important;
   height: auto !important;
   object-fit: contain !important;
@@ -69,22 +69,22 @@ body .page .doc-header .toc-header-website {
 
 @media (max-width: 540px) {
   body .page .doc-header {
-    grid-template-columns: 72px minmax(0, 1fr) auto !important;
+    grid-template-columns: 62px minmax(0, 1fr) auto !important;
     grid-template-rows: auto auto !important;
     gap: 6px 10px !important;
-    min-height: 88px !important;
+    min-height: 82px !important;
     padding: 10px 12px !important;
   }
 
   body .page .doc-header .toc-header-logo-wrap {
     grid-column: 1 !important;
     grid-row: 1 / 3 !important;
-    width: 68px !important;
-    height: 62px !important;
+    width: 58px !important;
+    height: 54px !important;
   }
 
   body .page .doc-header .toc-header-logo {
-    width: 220px !important;
+    width: 165px !important;
   }
 
   body .page .doc-header .toc-header-title {
@@ -107,31 +107,31 @@ body .page .doc-header .toc-header-website {
 
 @media print {
   body .page .doc-header {
-    grid-template-columns: 1.12in minmax(0, 1fr) auto !important;
+    grid-template-columns: 0.9in minmax(0, 1fr) auto !important;
     grid-template-rows: 1fr auto !important;
     column-gap: 0.12in !important;
-    min-height: 1.02in !important;
-    padding: 0.045in 0.06in !important;
+    min-height: 0.82in !important;
+    padding: 0.04in 0.06in !important;
     border-bottom: 1px solid #999 !important;
   }
 
   body .page .doc-header .toc-header-logo-wrap {
-    width: 1.05in !important;
-    height: 0.92in !important;
+    width: 0.82in !important;
+    height: 0.72in !important;
     overflow: hidden !important;
     justify-self: center !important;
     align-self: center !important;
   }
 
   body .page .doc-header .toc-header-logo {
-    width: 3.55in !important;
+    width: 2.66in !important;
     max-width: none !important;
     height: auto !important;
   }
 
   body .page .doc-header .toc-header-title {
-    font-size: 23pt !important;
-    letter-spacing: 2.4px !important;
+    font-size: 22pt !important;
+    letter-spacing: 2.3px !important;
     white-space: nowrap !important;
   }
 
