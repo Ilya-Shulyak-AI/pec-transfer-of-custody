@@ -22,7 +22,7 @@ body .page .doc-header .toc-header-logo-wrap {
 
 body .page .doc-header .toc-header-logo {
   display: block !important;
-  width: 104px !important;
+  width: 187.2px !important;
   max-width: 100% !important;
   height: auto !important;
   object-fit: contain !important;
@@ -73,7 +73,7 @@ body .page .doc-header .toc-header-website {
   }
 
   body .page .doc-header .toc-header-logo {
-    width: 50px !important;
+    width: 90px !important;
   }
 
   body .page .doc-header .toc-header-title {
@@ -105,7 +105,7 @@ body .page .doc-header .toc-header-website {
   }
 
   body .page .doc-header .toc-header-logo {
-    width: 0.56in !important;
+    width: 1.008in !important;
   }
 
   body .page .doc-header .toc-header-title {
