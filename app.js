@@ -546,18 +546,14 @@
     });
     APP.radioGroups.forEach((groupName) => setRadioGroupValue(groupName, ''));
     APP.signatureIds.forEach(clearSigBox);
-    const tocField = $('tocFormNumber');
-    if (tocField) tocField.value = generateTocFormNumber();
-    const formDateField = $('formDate');
-    if (formDateField) formDateField.value = todayString();
     state.signatureStorageFailed = false;
     clearStoredFormData();
     clearMissingHighlights();
     setValidationBanner();
+    setSavedAtDisplay('');
     closePrintWarningModal();
     hideStorageWarning();
     toggleAllOtherFields();
-    saveToStorage();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 

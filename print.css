@@ -1,4 +1,4 @@
-@page { size:letter portrait; margin:.12in; }
+@page { size:letter portrait; margin:0; }
 
 html,
 body {
@@ -70,7 +70,7 @@ body {
   max-height:none!important;
   max-width:none!important;
   margin:0 auto!important;
-  padding:0!important;
+  padding:.07in!important;
   border:2.25px solid #29abe2!important;
   box-shadow:none!important;
   overflow:visible!important;
@@ -79,9 +79,9 @@ body {
   break-inside:avoid!important;
 }
 
-.doc-header { display:grid!important; grid-template-columns:.95in minmax(0,1fr) 1.2in!important; align-items:center!important; column-gap:.12in!important; min-height:.82in!important; padding:.04in .06in!important; border:0!important; border-bottom:1px solid #999!important; }
-.toc-header-logo-wrap { grid-column:1!important; display:flex!important; align-items:center!important; justify-content:center!important; width:.82in!important; height:.74in!important; overflow:visible!important; padding:.01in 0!important; }
-.toc-header-logo { display:block!important; width:100%!important; height:100%!important; object-fit:contain!important; object-position:center!important; }
+.doc-header { display:grid!important; grid-template-columns:.62in minmax(0,1fr) 1.2in!important; align-items:center!important; column-gap:.1in!important; min-height:.52in!important; padding:.03in .05in!important; border:0!important; border-bottom:1px solid #999!important; }
+.toc-header-logo-wrap { grid-column:1!important; display:flex!important; align-items:center!important; justify-content:center!important; width:.52in!important; height:.46in!important; overflow:visible!important; padding:0!important; }
+.toc-header-logo { display:block!important; width:100%!important; height:100%!important; object-fit:contain!important; object-position:center!important; transform:scale(2)!important; transform-origin:center!important; }
 .toc-header-title { grid-column:2!important; justify-self:center!important; align-self:center!important; text-align:center!important; font-size:23pt!important; line-height:1!important; color:#1a4f8a!important; font-weight:900!important; font-style:italic!important; letter-spacing:2px!important; text-transform:uppercase!important; white-space:nowrap!important; }
 .toc-header-website { grid-column:3!important; align-self:end!important; justify-self:end!important; font-size:6.4pt!important; line-height:1!important; color:#555!important; font-weight:700!important; letter-spacing:.2px!important; white-space:nowrap!important; }
 .meta-row { display:grid!important; grid-template-columns:1fr 1fr!important; border:0!important; border-bottom:1px solid #999!important; }
@@ -106,7 +106,7 @@ body {
 .fld select,
 .meta-item input,
 .sig-date-row input { font-size:8.4pt!important; min-height:.15in!important; }
-#transferNotes { min-height:.15in!important; height:.15in!important; resize:none!important; overflow:visible!important; }
+#transferNotes { min-height:.20in!important; height:.20in!important; resize:vertical!important; overflow:auto!important; font-size:7.4pt!important; line-height:1.1!important; }
 .sec-header { padding:.04in .06in!important; font-size:7.7pt!important; border:0!important; }
 .checkbox-row { gap:6px!important; padding-top:1px!important; }
 .cb-opt span { font-size:8pt!important; }
@@ -114,7 +114,7 @@ body {
 .sig-grid { display:grid!important; grid-template-columns:1fr 1fr!important; border:0!important; }
 .sig-panel { padding:.05in .06in!important; border-right:1px solid #999!important; border-bottom:0!important; break-inside:auto!important; page-break-inside:auto!important; }
 .sig-panel:last-child { border-right:0!important; }
-.sig-panel-title { margin:-.05in -.06in .05in!important; padding:.04in .05in!important; font-size:7.2pt!important; white-space:nowrap!important; overflow:hidden!important; text-overflow:clip!important; }
+.sig-panel-title { margin:-.05in -.06in .05in!important; padding:.04in .05in!important; font-size:7.2pt!important; white-space:nowrap!important; overflow:hidden!important; text-overflow:clip!important; background:#1a4f8a!important; }
 .sig-canvas-wrap { height:.78in!important; }
 .sig-preview { max-height:calc(100% - 6px)!important; }
 section,
