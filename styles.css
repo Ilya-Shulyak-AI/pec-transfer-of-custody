@@ -3,7 +3,7 @@
 html { height:-webkit-fill-available; }
 body { font-family:var(--font-body); background:var(--bg); min-height:100vh; min-height:-webkit-fill-available; display:flex; flex-direction:column; align-items:center; padding:0 0 calc(24px + var(--safe-bottom)); padding-top:calc(60px + var(--safe-top)); }
 .toolbar { position:fixed; top:0; left:0; right:0; z-index:100; display:flex; gap:8px; align-items:center; background:var(--ink); padding:10px 14px; padding-top:calc(10px + var(--safe-top)); padding-left:calc(14px + var(--safe-left)); padding-right:calc(14px + var(--safe-right)); box-shadow:0 2px 8px rgba(0,0,0,.3); }
-.toolbar-label { font-family:var(--font-display); font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:rgba(255,255,255,.45); margin-right:auto; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.toolbar-label { font-family:var(--font-display); font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:rgba(255,255,255,.45); margin-right:auto; white-space:nowrap; overflow:auto; text-overflow:ellipsis; }
 .saved-status { font-size:12px; color:rgba(255,255,255,.72); white-space:nowrap; }
 .btn { font-family:var(--font-display); font-size:13px; font-weight:700; letter-spacing:1px; text-transform:uppercase; min-height:44px; min-width:44px; padding:10px 16px; border:none; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:6px; transition:opacity .15s,transform .1s; border-radius:2px; flex-shrink:0; }
 .btn:active { transform:scale(.95); opacity:.8; }
@@ -46,7 +46,7 @@ body { font-family:var(--font-body); background:var(--bg); min-height:100vh; min
 .fld label { font-size:9px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--mid); }
 .fld input:not([type="checkbox"]):not([type="radio"]), .fld select, .fld textarea { border:none; border-bottom:1px solid transparent; font-size:15px; font-family:var(--font-body); color:var(--ink); background:transparent; outline:none; width:100%; -webkit-appearance:none; appearance:none; min-height:36px; padding:2px 0; transition:border-color .15s; resize:vertical; }
 .fld input:not([type="checkbox"]):not([type="radio"]):focus, .fld select:focus, .fld textarea:focus { border-bottom-color:var(--blue); background:var(--blue-pale); padding:2px 4px; }
-.fld #transferNotes { min-height:34px; height:34px; line-height:1.2; resize:none; overflow:hidden; }
+.fld #transferNotes { min-height:34px; height:34px; line-height:1.2; resize:none; overflow:auto; }
 
 .fld.pre-fill { background:#fff; }
 .fld.pre-fill input { color:var(--ink); font-style:normal; }

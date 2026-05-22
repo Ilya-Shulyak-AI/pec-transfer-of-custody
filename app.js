@@ -557,7 +557,7 @@
     closePrintWarningModal();
     hideStorageWarning();
     toggleAllOtherFields();
-    setSavedAtDisplay('');
+    saveToStorage();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 

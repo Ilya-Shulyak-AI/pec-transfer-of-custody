@@ -97,7 +97,7 @@ body {
 .fg-receiving-primary,
 .fg-receiving-contact { grid-template-columns:1fr 1fr!important; }
 .fg-receiving-location { grid-template-columns:25% 10% 15% 50%!important; }
-.fld { min-height:.37in!important; padding:.038in .048in!important; border-right:1px solid #999!important; border-bottom:1px solid #999!important; overflow:hidden!important; }
+.fld { min-height:.37in!important; padding:.038in .048in!important; border-right:1px solid #999!important; border-bottom:1px solid #999!important; overflow:visible!important; }
 .fld:last-child { border-right:0!important; }
 .fld label,
 .sig-label,
@@ -106,7 +106,7 @@ body {
 .fld select,
 .meta-item input,
 .sig-date-row input { font-size:8.4pt!important; min-height:.15in!important; }
-#transferNotes { min-height:.15in!important; height:.15in!important; resize:none!important; overflow:hidden!important; }
+#transferNotes { min-height:.15in!important; height:.15in!important; resize:none!important; overflow:visible!important; }
 .sec-header { padding:.04in .06in!important; font-size:7.7pt!important; border:0!important; }
 .checkbox-row { gap:6px!important; padding-top:1px!important; }
 .cb-opt span { font-size:8pt!important; }
