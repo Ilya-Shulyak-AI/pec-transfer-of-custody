@@ -123,6 +123,12 @@
     return [String(now.getMonth() + 1).padStart(2, '0'), String(now.getDate()).padStart(2, '0'), now.getFullYear()].join('/');
   }
 
+  function generateTocFormNumber() {
+    const now = new Date();
+    const stamp = String(now.getFullYear()).slice(-2) + String(now.getMonth() + 1).padStart(2, '0') + String(now.getDate()).padStart(2, '0') + String(now.getHours()).padStart(2, '0') + String(now.getMinutes()).padStart(2, '0');
+    return `O-${stamp}`;
+  }
+
   function formatDateInputValue(value) {
     const digits = String(value || '').replace(/\D/g, '').slice(0, 8);
     if (digits.length <= 2) return digits;
@@ -540,6 +546,10 @@
     });
     APP.radioGroups.forEach((groupName) => setRadioGroupValue(groupName, ''));
     APP.signatureIds.forEach(clearSigBox);
+    const tocField = $('tocFormNumber');
+    if (tocField) tocField.value = generateTocFormNumber();
+    const formDateField = $('formDate');
+    if (formDateField) formDateField.value = todayString();
     state.signatureStorageFailed = false;
     clearStoredFormData();
     clearMissingHighlights();
@@ -547,7 +557,7 @@
     closePrintWarningModal();
     hideStorageWarning();
     toggleAllOtherFields();
-    setSavedAtDisplay('');
+    saveToStorage();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
