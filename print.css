@@ -99,6 +99,7 @@ body {
 .fg-receiving-location { grid-template-columns:25% 10% 15% 50%!important; }
 .fld { min-height:.37in!important; padding:.038in .048in!important; border-right:1px solid #999!important; border-bottom:1px solid #999!important; overflow:visible!important; }
 .fld:last-child { border-right:0!important; }
+.fg-2 > .fld:nth-child(2n):not(.full-row) { border-right:0!important; }
 .fld label,
 .sig-label,
 .sig-date-row label { font-size:6.4pt!important; }
